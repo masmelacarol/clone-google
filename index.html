@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Clone Google</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#" target="_black">Gmail</a></li>
+                <li><a href="#">Imagenes</a></li>
+                <li>
+                    <a href="#"><img src="./assets/images/menu.png" class="icons" alt="menu desplegable"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/images/avatar.jpg" class="icons" alt="avatar"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="content__logo">
+            <a href="https://www.google.com" target="_black"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="content__search">
+            <img class="search" src="./assets/images/search.png" alt="">
+            <input type="text">
+            <a href="#"> <img class="voice" src="./assets/images/voice.png" alt="icon voice"></a>
+        </div>
+        <div class="content__buttons">
+            <a href="#">Buscar con Google</a>
+            <a href="#">I'm Feeling Lucky</a>
+        </div>
+        <div class="content__language">
+            <small>
+                Ofrecido por Google en:
+                <a id="language" class="link">English</a>
+            </small>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__country">
+            <p>Colombia</p>
+        </div>
+        <div class="footer__links">
+            <div class="footer__links--about">
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Negocios</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Cómo funciona la Busqueda</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="footer__links--terms">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Privacidad</a>
+                        </li>
+                        <li><a href="#">Condiciones</a>
+                        </li>
+                        <li><a href="#">Preferencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        const link = document.getElementById('language');
+
+        link.addEventListener('click', () => {
+            if (link.innerHTML === "English") {
+                link.innerText = "Español (Latinoamérica)"
+            } else {
+                link.innerText = "English"
+            }
+        })
+    </script>
+
+</body>
+
+</html>
